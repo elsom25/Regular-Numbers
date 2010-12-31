@@ -4,5 +4,3 @@
  */
  
 void regular(int R[], int n);
-
-void print_array(int R[], int length);
