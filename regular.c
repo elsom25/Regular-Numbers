@@ -15,21 +15,16 @@ void regular(int R[], int n)
 {
 	/* initialize array R */
 	R[0] = 1;
-
-	/* counter */
-	int counter = 1;
 	
 	/* base variables */
 	int next_reg_num = 0, next_reg_num_fif = 0;	// position in array of reg nums
 	int base_3 = 3, base_5 = 5;	// numbers get updated by multiplication
-	
-	/* computed values */
 	int base_2, base_15;
 	
 	/* calculate regular numbers, and update array */
+	int counter = 1;
 	while (counter < n)
 	{
-		/* update computed values */
 		base_2 = 2 * R[next_reg_num];
 		base_15 = 15 * R[next_reg_num_fif];
 		
@@ -73,17 +68,4 @@ void regular(int R[], int n)
 			next_reg_num_fif += 1;
 		}
 	}
-}
-
-/* Intent:	prints the entire array
- * Pre:     length = (length of)R[]
- * Post:    the array, R, has been printed
- */
-void print_array(int R[], int length)
-{
-	for (int i = 0 ; i < length ; i++)
-	{
-		printf("%d,\t", R[i]);
-	}
-	printf("\n");
 }
