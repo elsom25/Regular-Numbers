@@ -1,1 +1,5 @@
-Required README
+An assignment from my 1B term at the University of Waterloo.
+
+A regular number is a positiv integer all of whose factors are from the set {2, 3, 5}.
+
+The problem was to write a function, regular(int R[], int n) which mutates R so that it contains the first n regular numbers in increasing order.  The code had a time efficiency requirement of O(n).
